@@ -1,0 +1,62 @@
+.intro-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1c40f;
+  height: 100vh;
+  justify-content: center;
+}
+
+.intro-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.intro-header h1 {
+  font-size: 2em;
+  color: #000;
+  margin: 0;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-truck img,
+.food-review img {
+  width: 200px;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.signup-button,
+.login-button {
+  background-color: #ffa500;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.signup-button:hover,
+.login-button:hover {
+  background-color: #ff8c00;
+}

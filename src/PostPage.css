@@ -1,0 +1,138 @@
+.post-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1c40f;
+  min-height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #f1c40f;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.search-bar {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.form-container h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-container button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.hotels-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hotel-card {
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hotel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hotel-name {
+  font-size: 1.5em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.hotel-description {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+.hotel-location,
+.hotel-offers {
+  font-size: 1em;
+  color: #888;
+  margin: 5px 0;
+}
+
+.hotel-reviews {
+  margin-top: 20px;
+}
+
+.hotel-reviews h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #f1c40f;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
