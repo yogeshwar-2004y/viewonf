@@ -12,6 +12,8 @@ import SignupPage from './components/SignupPage';
 import PostPage from './components/PostPage';
 import IntroPage from './components/IntroPage';
 import AccountPage from './components/AccountPage';
+import ViewPost from './components/ViewPost';
+
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -37,6 +39,7 @@ const App = () => {
             <Route path="/post" element={<PostPage />} />
             <Route path="/intro" element={<IntroPage />} />
             <Route path="/account" element={<AccountPage />} /> 
+            <Route path="/view-post" element={<ViewPost />} />
           </Routes>
         </main>
         <Footer />

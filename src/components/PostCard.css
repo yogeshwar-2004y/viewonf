@@ -1,0 +1,59 @@
+.post-card {
+  border: 10px solid #ccc;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.post-media {
+  text-align: center;
+}
+
+.post-media img,
+.post-media video {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.post-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-actions button {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: hwb(321 15% 13%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-actions button:hover {
+  background-color: #250080;
+}
+
+.comments-section {
+  width: 100%;
+}
+
+.comments-section input {
+  width: calc(100% - 20px);
+  padding: 5px;
+  background-color: darkgray;
+  color: hsl(0, 0%, 0%);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.comments-list p {
+  background-color: hsl(95, 80%, 48%);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+}

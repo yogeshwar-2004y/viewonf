@@ -58,7 +58,7 @@ const HomePage = () => {
         <a href="/offers">
           <button>Offers</button>
         </a>
-        <a href="/HomePage">
+        <a href="/view-post">
           <button>View Post</button>
         </a>
         <a href="/about">
