@@ -1,14 +1,16 @@
 import React from 'react';
 import './BlogsPage.css';
+import Header from './Header';
 
 const BlogsPage = () => {
   return (
     <div className="blogs-page">
+      <Header>
       <header className="header">
-        <img src="path/to/logo.png" alt="Viewon Logo" className="logo" />
+        <img src="src/assets/logo.png" alt="Viewon Logo" className="logo" />
         <button className="menu-button">☰</button>
       </header>
-
+      </Header>
       <div className="blogs-header">
         <h1>Blogs</h1>
       </div>

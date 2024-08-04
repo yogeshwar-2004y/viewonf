@@ -56,6 +56,8 @@
   }
   
   .new-launch-hotels-page h1 {
+    min-height: auto;
+    min-width: 80vh;
     color: #3100a2;
     text-align: center;
     margin-bottom: 20px;

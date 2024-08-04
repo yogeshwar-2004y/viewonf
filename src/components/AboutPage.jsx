@@ -5,12 +5,13 @@ const AboutPage = () => {
   return (
     <div className="about-page">
       <header className="header">
-        <img src="path/to/logo.png" alt="Viewon Logo" className="logo" />
+        <img src="src/assets/logo.png" alt="Viewon Logo" className="logo" />
+        <h1>About Us</h1>
         <button className="menu-button">☰</button>
       </header>
 
       <div className="about-content">
-        <h1>About ViewOn</h1>
+        <h1>ViewOn</h1>
         <p>
           Welcome to ViewOn, your ultimate destination for discovering and reviewing the best food and hotels in the city. Our mission is to provide you with the most comprehensive and reliable reviews, helping you make informed choices about where to dine and stay.
         </p>

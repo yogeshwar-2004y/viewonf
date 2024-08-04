@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./HomePage.css";
+import Header from './Header';
 
 const images = [
   'src/assets/slider1.jpg',
@@ -18,53 +19,50 @@ const HomePage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="home-page">
-     <header className="header">
-        <img src="src/assets/logo.png" alt="Viewon Logo" className="logo" />
-        <div className="search-bar">
-          <input type="text" placeholder="Enter hotel names" />
-          <button>Search</button>
-        </div>
-        <div className="header-icons">
-        <a href="http://www.googlemaps.com/">
-          <button>locate-me</button>
-        </a>
-        <a href="/account">
-          <button>account</button>
-        </a>
-        <a href="/intro">
-          <button>logout</button>
-        </a>
-        </div>
-      </header>
+      <Header>
+        <header className="header">
+          <img src="src/assets/logo.png" alt="Viewon Logo" className="logo" />
+        </header>
+      </Header>
 
       <div className="image-slider">
         <button className="prev" onClick={prevImage}>❮</button>
-        <img src={images[currentImageIndex]} alt="Grand Opening" className="slider-image" />
+        <img src={images[currentImageIndex]} alt="Slider" className="slider-image fade-in" />
         <button className="next" onClick={nextImage}>❯</button>
       </div>
 
       <nav className="nav-buttons">
         <a href="http://www.youtube.com/">
-          <button>Play</button>
+          <button className="nav-button">Play</button>
         </a>
         <a href="/blogs">
-          <button>Blogs</button>
+          <button className="nav-button">Blogs</button>
         </a>
         <a href="/new-launches">
-          <button>New Launch</button>
+          <button className="nav-button">New Launch</button>
         </a>
         <a href="/offers">
-          <button>Offers</button>
+          <button className="nav-button">Offers</button>
         </a>
         <a href="/view-post">
-          <button>View Post</button>
+          <button className="nav-button">View Post</button>
         </a>
         <a href="/about">
-          <button>About</button>
+          <button className="nav-button">About</button>
         </a>
       </nav>
+
+      <footer className="footer">
+      </footer>
     </div>
   );
 };

@@ -12,7 +12,12 @@ import SignupPage from './components/SignupPage';
 import PostPage from './components/PostPage';
 import IntroPage from './components/IntroPage';
 import AccountPage from './components/AccountPage';
-import ViewPost from './components/ViewPost';
+import ViewPost from './components/ViewPost'; // Import ViewPost
+import Singles from './components/Singles';
+import Couples from './components/Couples';
+import Family from './components/Family';
+import Midnight from './components/Midnight';
+import Pubs from './components/Pubs';
 
 
 const App = () => {
@@ -26,7 +31,6 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Header />
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -35,11 +39,16 @@ const App = () => {
             <Route path="/blogs" element={<BlogsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/login" element={<LoginPage onLogin={handleLogin} />} />
-            <Route path="/signup" element={<SignupPage onSignup={handleLogin} />} />
+            <Route path="/signup" element={<SignupPage />} />
             <Route path="/post" element={<PostPage />} />
             <Route path="/intro" element={<IntroPage />} />
-            <Route path="/account" element={<AccountPage />} /> 
+            <Route path="/account" element={<AccountPage />} />
             <Route path="/view-post" element={<ViewPost />} />
+            <Route path="/singles" element={<Singles />} />
+            <Route path="/couples" element={<Couples />} />
+            <Route path="/family" element={<Family />} />
+            <Route path="/mid" element={<Midnight />} />
+            <Route path="/pubs" element={<Pubs />} />
           </Routes>
         </main>
         <Footer />

@@ -4,36 +4,33 @@ import Header from './Header';
 
 const restaurants = [
   {
-    name: 'Chinese Wok',
-    rating: 4.3,
-    deliveryTime: '20-25 mins',
-    cuisines: 'Chinese, Asian, Tibetan',
-    location: 'Peelamedu',
-    offer: 'Items at ₹199',
-    image: 'src/assets/res1.jpg',
+    name: 'The Cascade Restaurant',
+    rating: 4.5,
+    cuisines: 'Chinese, Asian',
+    location: 'RS Puram',
+    offer: 'Buy 1 Get 1 Free on select dishes',
+    image: 'src/assets/res2.j',
   },
   {
-    name: 'Barbeque Nation',
+    name: 'On The Go',
     rating: 4.3,
-    deliveryTime: '30-35 mins',
-    cuisines: 'North Indian, Barbecue',
-    location: 'Avinashi Road',
-    offer: 'Items at ₹199',
+    cuisines: 'Italian, Continental',
+    location: 'Race Course',
+    offer: 'Complimentary dessert with dinner',
     image: 'src/assets/res3.jpg',
   },
   {
-    name: 'HMR - Biryani Hut',
+    name: 'Bird on Tree',
     rating: 4.3,
-    deliveryTime: '20-25 mins',
-    cuisines: 'Biryani, Indian',
-    location: 'Ramanathapuram',
-    offer: '₹150 off above ₹500',
+    cuisines: 'Indian, Continental',
+    location: 'Avinashi Road',
+    offer: ' 20% off on total bill for couples',
     image: 'src/assets/res2.jpg',
   },
   // Add more restaurants as needed
 ];
 
-const NewLaunchHotelsPage = () => {
+const Couples = () => {
   return (
     <div className="head">
       <Header>
@@ -42,7 +39,7 @@ const NewLaunchHotelsPage = () => {
       </header>
       </Header>
       <div className="new-launch-hotels-page">
-        <h1>New Launch Hotels</h1>
+        <h1>Cute Couples</h1>
         <div className="restaurants-list">
           {restaurants.map((restaurant, index) => (
             <div key={index} className="restaurant-card">
@@ -51,7 +48,6 @@ const NewLaunchHotelsPage = () => {
               <div className="restaurant-info">
                 <h2>{restaurant.name}</h2>
                 <p>{restaurant.rating} ★</p>
-                <p>{restaurant.deliveryTime}</p>
                 <p>{restaurant.cuisines}</p>
                 <p>{restaurant.location}</p>
               </div>
@@ -63,4 +59,4 @@ const NewLaunchHotelsPage = () => {
   );
 };
 
-export default NewLaunchHotelsPage;
+export default Couples;

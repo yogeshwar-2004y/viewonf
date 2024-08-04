@@ -4,29 +4,26 @@ import Header from './Header';
 
 const restaurants = [
   {
-    name: 'Chinese Wok',
-    rating: 4.3,
-    deliveryTime: '20-25 mins',
+    name: 'CHILLUM CAFE',
+    rating: 4.9,
     cuisines: 'Chinese, Asian, Tibetan',
     location: 'Peelamedu',
     offer: 'Items at ₹199',
     image: 'src/assets/res1.jpg',
   },
   {
-    name: 'Barbeque Nation',
+    name: 'RedDoor Cafe’s The Game Hub',
     rating: 4.3,
-    deliveryTime: '30-35 mins',
-    cuisines: 'North Indian, Barbecue',
-    location: 'Avinashi Road',
-    offer: 'Items at ₹199',
+    cuisines: 'Italian, Barbecue',
+    location: 'Saibaba Colony',
+    offer: 'combos at ₹399',
     image: 'src/assets/res3.jpg',
   },
   {
-    name: 'HMR - Biryani Hut',
+    name: 'Boomers gaming café',
     rating: 4.3,
-    deliveryTime: '20-25 mins',
-    cuisines: 'Biryani, Indian',
-    location: 'Ramanathapuram',
+    cuisines: 'Italian, Barbecue,Chicken',
+    location: 'Nava India',
     offer: '₹150 off above ₹500',
     image: 'src/assets/res2.jpg',
   },
@@ -51,7 +48,6 @@ const NewLaunchHotelsPage = () => {
               <div className="restaurant-info">
                 <h2>{restaurant.name}</h2>
                 <p>{restaurant.rating} ★</p>
-                <p>{restaurant.deliveryTime}</p>
                 <p>{restaurant.cuisines}</p>
                 <p>{restaurant.location}</p>
               </div>
