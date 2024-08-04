@@ -1,23 +1,25 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 
 const LoginPage = ({ onLogin }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Perform authentication (e.g., API call)
-    // For simplicity, we'll just set the user as authenticated
-    if (username === 'owner' && password === 'password') {
-      onLogin(true);
-      history.push('/home');
-    } else if (username === 'user' && password === 'password') {
-      onLogin(false);
-      history.push('/home');
+    if (typeof onLogin === 'function') {
+      if (username === 'owner' && password === 'password') {
+        onLogin(true);
+        navigate('/');
+      } else if (username === 'user' && password === 'password') {
+        onLogin(false);
+        navigate('/');
+      } else {
+        alert('Invalid credentials');
+      }
     } else {
-      alert('Invalid credentials');
+      alert('Login function not provided');
     }
   };
 

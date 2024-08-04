@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PostPage.css';
+import "./PostPage.css";
 
 const initialHotels = [
   {

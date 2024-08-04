@@ -1,0 +1,33 @@
+.footer {
+  background-color: #3100a2;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__info {
+  margin-bottom: 10px;
+}
+
+.footer__nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer__nav a {
+  color: #ff6347;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer__nav a:hover {
+  text-decoration: underline;
+}

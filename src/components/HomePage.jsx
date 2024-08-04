@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './HomePage.css';
+import "./HomePage.css";
 
 const images = [
-  'path/to/grand-opening1.png',
-  'path/to/grand-opening2.png',
-  'path/to/grand-opening3.png'
+  'src/assets/slider1.jpg',
+  'src/assets/slider2.jpg',
+  'src/assets/slider3.jpg'
 ];
 
 const HomePage = () => {
@@ -20,15 +20,22 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <header className="header">
-        <img src="path/to/logo.png" alt="Viewon Logo" className="logo" />
+     <header className="header">
+        <img src="src/assets/logo.png" alt="Viewon Logo" className="logo" />
         <div className="search-bar">
           <input type="text" placeholder="Enter hotel names" />
           <button>Search</button>
         </div>
         <div className="header-icons">
-          <button>Icon1</button>
-          <button>Icon2</button>
+        <a href="http://www.googlemaps.com/">
+          <button>locate-me</button>
+        </a>
+        <a href="/account">
+          <button>account</button>
+        </a>
+        <a href="/intro">
+          <button>logout</button>
+        </a>
         </div>
       </header>
 
@@ -39,22 +46,25 @@ const HomePage = () => {
       </div>
 
       <nav className="nav-buttons">
-        <button>Play</button>
-        <button>Blogs</button>
-        <button>New Launch</button>
-        <button>Offers</button>
-        <button>View Post</button>
-        <button>About</button>
+        <a href="http://www.youtube.com/">
+          <button>Play</button>
+        </a>
+        <a href="/blogs">
+          <button>Blogs</button>
+        </a>
+        <a href="/new-launches">
+          <button>New Launch</button>
+        </a>
+        <a href="/offers">
+          <button>Offers</button>
+        </a>
+        <a href="/HomePage">
+          <button>View Post</button>
+        </a>
+        <a href="/about">
+          <button>About</button>
+        </a>
       </nav>
-
-      <footer className="footer">
-        <p>© viewon.ptv</p>
-        <div className="social-icons">
-          <button>Instagram</button>
-          <button>Facebook</button>
-          <button>LinkedIn</button>
-        </div>
-      </footer>
     </div>
   );
 };

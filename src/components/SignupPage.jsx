@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './SignupPage.css';
 
 const SignupPage = ({ onSignup }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [role, setRole] = useState('user');
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleSignup = () => {
     // Perform signup (e.g., API call)
     // For simplicity, we'll just set the user as authenticated
     if (username && password) {
       onSignup(role === 'owner');
-      history.push('/home');
+      navigate('/home');
     } else {
       alert('Please fill all fields');
     }

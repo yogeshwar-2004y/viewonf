@@ -13,8 +13,12 @@ const IntroPage = () => {
           <img src="path/to/food-truck.png" alt="Food Truck" />
         </div>
         <div className="buttons">
+         <a href="/signup">
           <button className="signup-button">Signup</button>
+         </a>
+         <a href="/login">
           <button className="login-button">Login</button>
+         </a>
         </div>
         <div className="food-review">
           <img src="path/to/food-review.png" alt="Food Review" />
